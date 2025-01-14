@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript usando For</title>
+</head>
+<body>
+    <h1>SÉRIE FIBONACCI USANDO FOR JAVASCRIPT</h1>
+
+<SCRIPT>
+   var t1= 0;
+   var t2= 1;
+   document.write("Termo 1 = " + t1 + "<br>");
+   document.write("Termo 2 = " + t2 + "<br>");
+   //var aureo = t2/t1;
+   //document.write("N�mero �ureo = " + aureo + "<br>");
+   var i=0;
+   var num = parseInt(prompt("SÉrie Fibonacci", "Digite o termo da Série que deseja:"));
+   for(i=3; i<= num; i++){
+    novotermo = t1 + t2;
+    document.write("termo " + i + " = " + novotermo + "<br>");
+    aureo = novotermo/t2;
+    document.write("Número áureo = " + aureo + "<br>");
+    t1 = t2;
+    t2 = novotermo;
+    }
+
+    document.write("===== FIM DO FOR");
+</SCRIPT>
+
+
+    
+</body>
+</html>
